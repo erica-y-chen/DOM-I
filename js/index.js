@@ -40,3 +40,75 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+let logoImg = document.getElementById('cta-img');
+logoImg.src="./img/header-img.png";
+
+
+let middleImg = document.getElementById('middle-img');
+middleImg.src="./img/mid-page-accent.jpg";
+
+
+let navi = document.querySelectorAll('a');
+navi[0].textContent= "Services";
+navi[1].textContent= "Product";
+navi[2].textContent= "Vision";
+navi[3].textContent= "Features";
+navi[4].textContent= "About";
+navi[5].textContent= "Contact";
+                                                                                              
+navi.forEach(function(currentValue) {
+  currentValue.style.color='green';
+})
+
+
+let newPage = document.createElement('a');
+newPage.textContent="Account";
+
+let navigation = document.querySelector('nav');
+navigation.append(newPage);
+
+let newPageTwo = document.createElement('a');
+newPageTwo.textContent="Settings";
+
+navigation.prepend(newPageTwo);
+
+const topContent= document.getElementsByTagName('h1');
+topContent[0].textContent= "DOM is Awesome"; 
+
+
+let topContentButton= document.querySelector('.cta-text button');
+topContentButton.textContent = "Get Started";
+
+
+let features = document.querySelector('.top-content .text-content h4');
+features.textContent = "Features";
+
+let featuresContent = document.querySelector('.top-content .text-content p');
+featuresContent.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+let about= document.getElementsByTagName("h4");
+about[1].textContent= "About";
+about[2].textContent= "Services";
+about[3].textContent= "Product";
+about[4].textContent= "Vision";
+about[5].textContent= "Contact";
+
+let content= document.getElementsByTagName("p");
+content[1].textContent="About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+content[2].textContent="Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+content[3].textContent="Product  content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+content[4].textContent="Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+content[5].textContent="123 Way 456 Street Somewhere, USA";
+content[6].textContent="1 (888) 888-8888",
+content[7].textContent="sales@greatidea.io",
+content[8].textContent="copyright : Copyright Great Idea! 2018"
+
+
+// let features = document.querySelector('.top-content .text-content h4');
+// features.textContent = "About";
+
+// let features = document.getElementsbyClassName('text-content')[0];
+// features.textContent= "Features";
+
